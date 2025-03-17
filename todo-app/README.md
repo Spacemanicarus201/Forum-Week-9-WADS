@@ -10,7 +10,7 @@ Features
 
 Clone the repository:  
   
-    git clone 
+    git clone https://github.com/Spacemanicarus201/TO-DO.git
     cd to-do-app-list  
   
 Install dependencies:  
