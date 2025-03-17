@@ -1,0 +1,122 @@
+body {
+  background: radial-gradient(circle, hsl(210, 30%, 15%), hsl(250, 30%, 20%));
+  color: white;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  overflow-x: hidden;
+}
+
+.to-do-list {
+  text-align: center;
+  margin: 50px auto;
+  padding: 30px;
+  max-width: 700px;
+  background: hsl(0, 0%, 18%);
+  border-radius: 20px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+  animation: fadeIn 0.8s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+h1 {
+  font-size: 3.8rem;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+button {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.3s;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+  transform: translateY(-3px) scale(1.05);
+}
+
+.logout-btn {
+  background: hsl(0, 100%, 50%);
+  position: fixed;
+  top: 10px;
+  right: 10px;
+}
+
+.add-button {
+  background: hsl(145, 63%, 42%);
+}
+
+.delete-button {
+  background: hsl(0, 85%, 50%);
+}
+
+.edit-button, .move-button {
+  background: hsl(220, 90%, 56%);
+}
+
+input[type="text"] {
+  font-size: 1.2rem;
+  padding: 10px;
+  border: 2px solid hsl(0, 0%, 50%);
+  border-radius: 10px;
+  margin: 10px 0;
+  background: hsl(0, 0%, 20%);
+  color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+input[type="checkbox"] {
+  scale: 1.5;
+  margin: 0 15px;
+}
+
+ol {
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  background: hsl(0, 0%, 25%);
+  border-radius: 12px;
+  margin: 15px 0;
+  padding: 20px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.2s, background 0.2s;
+}
+
+li:hover {
+  background: hsl(0, 0%, 30%);
+  transform: translateY(-5px);
+}
+
+.text {
+  flex-grow: 1;
+  word-break: break-word;
+  font-size: 1.4rem;
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+}
+
+.drag-handle {
+  cursor: grab;
+  font-size: 1.8rem;
+  color: white;
+  margin-left: 10px;
+}
+
+.drag-handle:active {
+  cursor: grabbing;
+}
